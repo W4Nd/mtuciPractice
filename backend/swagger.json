@@ -1,0 +1,84 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "My API",
+    "description": "Description",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000/api",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/vacancies": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "salary",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "currency",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "area",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "employment",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "experience",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "schedule",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/allVacancies": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
